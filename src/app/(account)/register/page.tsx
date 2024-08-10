@@ -5,80 +5,8 @@ export const metadata = {
 
 export default function SignIn() {
   return (
-    <div className="w-full h-full flex items-center justify-center bg-indigo-100">
-      <form className="w-full md:w-1/3 rounded-lg">
-        <div className="flex font-bold justify-center mt-6">
-          <img className="h-20 w-20 mb-3" src="https://dummyimage.com/64x64" />
-        </div>
-        <h2 className="text-2xl text-center text-gray-600 mb-8">Register</h2>
-        <div className="px-12 pb-10">
-          <div className="w-full mb-2">
-            <div className="flex items-center">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="
-                  w-full
-                  border
-                  rounded
-                  px-3
-                  py-2
-                  text-gray-700
-                  focus:outline-none
-                "
-              />
-            </div>
-          </div>
-          <div className="w-full mb-2">
-            <div className="flex items-center">
-              <input
-                type="text"
-                placeholder="Email Address"
-                className="
-                  w-full
-                  border
-                  rounded
-                  px-3
-                  py-2
-                  text-gray-700
-                  focus:outline-none
-                "
-              />
-            </div>
-          </div>
-          <div className="w-full mb-2">
-            <div className="flex items-center">
-              <input
-                type="password"
-                placeholder="Password"
-                className="
-                  w-full
-                  border
-                  rounded
-                  px-3
-                  py-2
-                  text-gray-700
-                  focus:outline-none
-                "
-              />
-            </div>
-          </div>
-          <button
-            type="submit"
-            className="
-              w-full
-              py-2
-              mt-8
-              rounded-full
-              bg-blue-400
-              text-gray-100
-              focus:outline-none
-            "
-          >
-            Register
-          </button>
-        </div>
-      </form>
+    <div className='w-full h-full flex items-center justify-center flex-col'>
+     <h2 className='text-2xl text-amber-300 sm:text-3xl sm:text-emerald-300 md:text-4xl md:text-red-300'>Register</h2>
     </div>
-  )
+   );
 }

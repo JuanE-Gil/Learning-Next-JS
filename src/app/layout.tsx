@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './global.css';
 import { Metadata } from 'next';
 
@@ -17,7 +18,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>App Header</header>
+        <header>
+          <h2>App Header</h2>
+          <nav className='flex gap-2'>
+            <Link href="/">Home</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/products">Products</Link>
+            <Link href="/login">Login</Link>
+            <Link href="/register">Register</Link>
+            <Link href="/password">Password</Link>
+            <Link href="/dashboard">Dashboard</Link>
+          </nav>
+          </header>
         <main>{children}</main>
         <footer>App Footer</footer>
       </body>
